@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Login', url: '/login', icon: 'log-in' },
     { title: 'Produtos', url: '/produtos', icon: 'fast-food' },
     { title: 'Carrinho', url: '/carrinho', icon: 'cart' },
     { title: 'Categorias', url: '/categorias', icon: 'list-circle' },
+    
   ];
 
   constructor() {}

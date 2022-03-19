@@ -79,7 +79,6 @@ export class CategoriasPage implements OnInit {
   }
 
 
-  //barra de rolagem
 loadData(event) {
 
   this.start += this.limit;
