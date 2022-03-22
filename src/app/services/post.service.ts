@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class Post{
+    cpf: string;
+    checkbox : boolean = true;
     server: string = 'http://delivery.hugocursos.com.br/apis/';
     url_site_img_produtos: string = 'http://delivery.hugocursos.com.br/images/produtos/';
     url_site_img_cat: string = 'http://delivery.hugocursos.com.br/images/categorias/';
@@ -16,5 +18,5 @@ export class Post{
 
             let url = this.server + api;
             return this.http.post(url, JSON.stringify(dados), httpOptions).map(res => res);
-        }
+    }
 }

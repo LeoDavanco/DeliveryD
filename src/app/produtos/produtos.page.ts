@@ -45,7 +45,7 @@ export class ProdutosPage implements OnInit {
      
       
     }); 
-    this.cpf = '777.777.777-71';
+    this.cpf = this.provider.cpf;
 
 
     this.lista = [];
@@ -54,8 +54,6 @@ export class ProdutosPage implements OnInit {
     this.listarCarrinho();
     this.url_site_img = this.provider.url_site_img_produtos; 
   }
-
-
 
 
   listarProdutos(){

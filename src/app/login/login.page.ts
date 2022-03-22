@@ -40,13 +40,12 @@ export class LoginPage implements OnInit {
       return;
     }
 
-
     let dados = {
       requisicao : 'login',
       usuario : this.usuario, 
       senha : this.senha
       
-      };
+    };
 
       this.provider.dadosApi(dados, 'apiLogin.php').subscribe(async data => {
       var alert = data['msg'];
@@ -63,7 +62,9 @@ export class LoginPage implements OnInit {
         toast.present();
         this.usuario = "";
         this.senha = "";
-        console.log(data);
+        console.log(data['result'].cpf);
+        this.provider.cpf = data['result'].cpf;
+        
       }else{
         const toast = await this.toast.create({
           message: alert,
@@ -104,7 +105,6 @@ async recuperarModal(){
       }, {
         text: 'Enviar',
         handler: (data) => {
-         //atualizar pag
          
          this.usuario = data.email;
          console.log(this.usuario);

@@ -75,7 +75,7 @@ export class CadastroPage implements OnInit {
         cidade : this.cidade,
         senha : this.senha,
         cep : this.cep,
-        };
+      };
   
         this.provider.dadosApi(dados, 'apiLogin.php').subscribe(data => {
           
@@ -89,9 +89,6 @@ export class CadastroPage implements OnInit {
     });
   }
 
-
-
-  
   listarLocais(){
     return new Promise(resolve => {
 
