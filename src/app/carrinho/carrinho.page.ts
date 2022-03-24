@@ -209,7 +209,7 @@ async finalizarModal(){
       {
         name: 'troco',
         type: 'number',
-        placeholder: 'Valor para o Troco',
+        placeholder: 'Troco para quanto?',
         //value: this.usuario
       },
 

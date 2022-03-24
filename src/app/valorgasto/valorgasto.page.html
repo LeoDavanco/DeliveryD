@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button class="menu-button"></ion-menu-button>
     </ion-buttons>
-    <ion-title class="titulo-home">Empresas Vinculadas</ion-title>
+    <ion-title class="titulo-home">Favoritos</ion-title>
       <ion-button slot="end" (click)="logout()" color="danger">
         <ion-icon  slot="end" name="arrow-back"></ion-icon>
       </ion-button>
@@ -14,43 +14,43 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-checkbox checked="provider.checkbox" color="success" (click)="checkboxsave()"></ion-checkbox>
-      <ion-img src="../assets/ifood.jpg"></ion-img>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-checkbox [(ngModel)]="checkbox" color="success" (ionChange)="saveCheckbox()"></ion-checkbox>
+      <ion-img src="../assets/mc.png"></ion-img>
+      <ion-card-title>MC Donalds</ion-card-title>
+      <ion-card-subtitle>Das 11:00 as 01h</ion-card-subtitle>
     </ion-card-header>
-  
+
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      De segunda a segunda fornecendo os lanches mais populares do mundo na porta da sua casa
+      Favorite agora mesmo e nao perca nenhuma das nossas promoções!
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
-      <ion-checkbox color="success"></ion-checkbox>
-      <ion-img src="../assets/ifood.jpg"></ion-img>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-checkbox [(ngModel)]="checkbox1" color="success" (ionChange)="saveCheckbox1()"></ion-checkbox>
+      <ion-img src="../assets/bk.png"></ion-img>
+      <ion-card-title>Burger King</ion-card-title>
+      <ion-card-subtitle>Das 11:30 as 00h</ion-card-subtitle>
     </ion-card-header>
-  
+
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      Toda hora é hora de comer um Whopper, peça agora mesmo e receba no menor tempo de entrega do Brasil.
+      A gente sabe que você vai gostar! Favorite e aproveite!
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
-      <ion-checkbox color="success"></ion-checkbox>
-      <ion-img src="../assets/ifood.jpg"></ion-img>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-checkbox [(ngModel)]="checkbox2" color="success" (ionChange)="saveCheckbox2()"></ion-checkbox>
+      <ion-img src="../assets/bobs.png"></ion-img>
+      <ion-card-title>Bob's</ion-card-title>
+      <ion-card-subtitle>Das 11:40 as 23h</ion-card-subtitle>
     </ion-card-header>
-  
+
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      O tradicionalissimo Bob's, com os melhores hamburgers do mundo, comidas deliciosas e num preço acessível para todos os bolsos.
+      Aproveite e faça seu pedido agora mesmo! Mas não deixe a fome fazer você esquecer de favoritar a gente hein?!
     </ion-card-content>
   </ion-card>
 

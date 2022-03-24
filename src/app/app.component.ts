@@ -10,7 +10,7 @@ export class AppComponent {
     { title: 'Produtos', url: '/produtos', icon: 'fast-food' },
     { title: 'Carrinho', url: '/carrinho', icon: 'cart' },
     { title: 'Categorias', url: '/categorias', icon: 'list-circle' },
-    { title: 'Empresas Vinculadas', url: '/valorgasto', icon: 'Cart' },
+    { title: 'Favoritos', url: '/valorgasto', icon: 'Cart' },
     
   ];
 

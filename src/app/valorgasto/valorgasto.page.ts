@@ -21,9 +21,15 @@ export class ValorgastoPage implements OnInit {
 
   total_carrinho : string;
   dadosLogin : any;
+  checkbox : boolean;
+  checkbox1 : boolean;
+  checkbox2 : boolean;
   constructor(public alertController: AlertController, private storage: NativeStorage, private actRouter: ActivatedRoute, private router: Router, private provider:Post, public toast: ToastController) { }
 
   ngOnInit() {
+    this.checkbox = JSON.parse(localStorage.getItem('checkbox'));
+    this.checkbox1 = JSON.parse(localStorage.getItem('checkbox1'));
+    this.checkbox2 = JSON.parse(localStorage.getItem('checkbox2'));
 
   }
 
@@ -32,5 +38,14 @@ export class ValorgastoPage implements OnInit {
     this.router.navigate(['/produtos']);
   }
 
+  saveCheckbox(){
+    localStorage.setItem('checkbox', JSON.stringify(this.checkbox));
+  }
+  saveCheckbox1(){
+    localStorage.setItem('checkbox1', JSON.stringify(this.checkbox1));
+  }
+  saveCheckbox2(){
+    localStorage.setItem('checkbox2', JSON.stringify(this.checkbox2));
+  }
 
 }
